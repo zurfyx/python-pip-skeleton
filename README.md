@@ -27,10 +27,37 @@ Logic: `hello/Hello.py`
 
 ## Publish to PyPI
 
-Fastest, though not recommended for security reasons:
+Strongly suggest to read over [Uploading your Project to PyPI](http://python-packaging-user-guide.readthedocs.org/en/latest/distributing/#uploading-your-project-to-pypi)
+
+### Requeriments
+
+Python 2: `apt-get install python-setuptools`
+
+Python 3: `apt-get install python3-setuptools`
+
+### First time
 
 ```
 $ python setup.py register
 ```
+Beware that passwords are sent plain text. See [twine](https://packaging.python.org/en/latest/projects/#twine)
 
-Read over [Uploading your Porject to PyPI](http://python-packaging-user-guide.readthedocs.org/en/latest/distributing/#uploading-your-project-to-pypi)
+### Recurrent
+```
+$ python setup.py upload
+```
+Beware that passwords are sent plain text. See [twine](https://packaging.python.org/en/latest/projects/#twine)
+
+### Pypi config file
+
+Edit: `~/.pypirc`
+
+```
+[distutils]
+index-servers=pypi
+
+[pypi]
+repository=https://pypi.python.org/pypi
+username=<username>
+password=<password>
+```

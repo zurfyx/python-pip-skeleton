@@ -1,0 +1,4 @@
+build/
+Hello_World.egg-info
+
+*.pyc

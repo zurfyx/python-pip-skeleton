@@ -2,11 +2,10 @@
 
 from distutils.core import setup
 
-setup(name='Hello World',
+setup(name='hello-world-py',
   version='1.0',
   description='A basic hello world package',
   author='zurfyx',
-  author_email='zurfyx@gmail.com',
   url='https://github.com/zurfyx',
   packages=['hello'],
  )

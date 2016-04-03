@@ -38,13 +38,13 @@ Python 3: `apt-get install python3-setuptools`
 ### First time
 
 ```
-$ python setup.py register
+$ python setup.py sdist register
 ```
 Beware that passwords are sent plain text. See [twine](https://packaging.python.org/en/latest/projects/#twine)
 
 ### Recurrent
 ```
-$ python setup.py upload
+$ python setup.py sdist upload
 ```
 Beware that passwords are sent plain text. See [twine](https://packaging.python.org/en/latest/projects/#twine)
 

@@ -1,4 +1,5 @@
 build/
-Hello_World.egg-info
+dist/
+hello_world_py.egg-info/
 
 *.pyc
